@@ -10,7 +10,7 @@ resource "google_compute_instance" "ex01" {
   name         = "ex01"
   machine_type = "n1-standard-1"
   project = "nome_projeto"
-  zone         = "nome_zona"
+  zone         = "us-central1-a"
 
     boot_disk {
         initialize_params {
@@ -21,5 +21,5 @@ resource "google_compute_instance" "ex01" {
         auto_delete = true
     }
 
-    tags = ["api", "prd"]
+    tags = ["teste"]
 }
